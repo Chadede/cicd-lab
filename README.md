@@ -32,13 +32,19 @@ Open [localhost:3000](http://localhost:3000). The [health endpoint](http://local
 {"status":"ok"}
 ```
 
+The [version endpoint](http://localhost:3000/api/version) returns HTTP 200 with:
+
+```json
+{"version":"development"}
+```
+
 Stop the server with Ctrl+C.
 
 ## Scripts
 
 - `npm run dev`: start the development server with automatic restarts.
 - `npm run typecheck`: check TypeScript without generating output.
-- `npm test`: run the health endpoint test. The test starts and stops its own server.
+- `npm test`: run the API endpoint tests. The tests start and stop their own server.
 - `npm run build`: compile the app into `dist`.
 - `npm start`: run the compiled app after building it.
 
